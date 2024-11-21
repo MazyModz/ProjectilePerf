@@ -12,9 +12,9 @@ The Actorless projectiles are designed to utilize the CPU cache, prefetcher and 
 | `Actor`     | 7.1ms    | 1ms     |
 | `Actorless` | 0.042ms  | 0.097ms |
 
-It's important to note, I did **NOT** optimized the  Actorless projectiles. This is literally just the first thing I typed into the code editor. By just understanding how the hardware works, and designing our code around that we get a 10x speedup. The Actorless projectiles can be easily optimized with Multithreading or SIMD.
+It's important to note, I did **NOT** optimize the  Actorless projectiles. This is literally just the first thing I typed into the code editor. By just understanding how the hardware works, and designing our code around that we get a 10x speedup. The Actorless projectiles can be easily optimized with Multithreading or SIMD.
 
 ## Running the Project
-There should be a BP_ProjectileConfig in the Context Explorer. This is how you configure the projectiles to spawn. You can add more of these configs by adding another **AProjectileSpawner** into the world.
+There should be a BP_ProjectileConfig in the Content Explorer. This is how you configure the projectiles to spawn. You can add more of these configs by adding another **AProjectileSpawner** into the world.
 
 Then you can run Unreal Insights. Make sure to disable Debug Drawing inside of the Config files to get more accurate performance results.
